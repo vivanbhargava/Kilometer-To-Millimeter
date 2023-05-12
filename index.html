@@ -1,6 +1,6 @@
 <html>
     <head>
-    <title>Kilometer To Centimeter</title>
+    <title>Kilometer To Millimeter</title>
 </head>
 
 <body style="text-align: center; background: lightgreen; color: blue;">
@@ -9,12 +9,12 @@
         <label>Kilometer</label>
             <input id="input" type="number" placeholder="Kilometer" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
     </p>
-    <p>Centimeter: <span id="outputcenti"></span></p>
+    <p>Millimeter: <span id="outputmilli"></span></p>
 
     <script>
         function lengthorDistanceConverter(valNum) {
             valNum = parseFloat(valNum);
-            document.getElementById("outputcenti").innerHTML = valNum * 100000;
+            document.getElementById("outputmilli").innerHTML = valNum * 1e+6;
         }
     </script>
 
